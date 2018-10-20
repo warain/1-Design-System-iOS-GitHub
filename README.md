@@ -23,6 +23,81 @@ Kindly stick to the best practices you learn in this Guide and by the end you wi
 # Core Five Steps
 Start with Step 1 and follow through all the way to the end. Please make sure you enjoy the process. Good luck, go forth and change the World!
 
+Design Templates Cloning Process
+1. Clone template repository with the tag `--bare`
+2. Create your private repository
+3. Enter your private repository and clone `--Mirror` the Design Template
+4. Push your private repository
+5. Pull updates from the Design Template
+
+## Steps Listed Below
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>The answers are correct but don't mention how to sync code between the public repo and the fork.</p>
+
+<p>Here is the full workflow (we've done this before open sourcing <a href="https://github.com/facebook/react-native">React Native</a>):</p>
+
+<hr>
+Testing Fuse
+<p>First, duplicate the repo as others said (details <a href="https://help.github.com/articles/duplicating-a-repository/">here</a>):</p>
+
+<p>Create a new repo (let's call it <code>private-repo</code>) via the <a href="https://github.com/new">Github UI</a>. Then:</p>
+
+<pre><code>git clone --bare https://github.com/exampleuser/public-repo.git
+cd public-repo.git
+git push --mirror https://myusername:mypassword@github.com/yourname/private-repo.git
+cd ..
+rm -rf public-repo.git
+</code></pre>
+
+<hr>
+
+<p>Clone the private repo so you can work on it:</p>
+
+<pre><code>git clone https://github.com/yourname/private-repo.git
+cd private-repo
+make some changes
+git commit
+git push origin master
+</code></pre>
+
+<hr>
+
+<p>To pull new hotness from the public repo:</p>
+
+<pre><code>cd private-repo
+git remote add public https://github.com/exampleuser/public-repo.git
+git pull public master # Creates a merge commit
+git push origin master
+</code></pre>
+
+<p>Awesome, your private repo now has the latest code from the public repo plus your changes.</p>
+
+<hr>
+
+<p>Finally, to create a pull request private repo -&gt; public repo:</p>
+
+<p>The only way to create a pull request is to have push access to the public repo. This is because you need to push to a branch there (<a href="http://stackoverflow.com/questions/14821583/pull-request-without-forking">here's why</a>).</p>
+
+<pre><code>git clone https://github.com/exampleuser/public-repo.git
+cd public-repo
+git remote add private_repo_yourname https://github.com/yourname/private-repo.git
+git checkout -b pull_request_yourname
+git pull private_repo_yourname master
+git push origin pull_request_yourname
+</code></pre>
+
+<p>Now simply create a pull request via the Github UI for public-repo, as described <a href="https://help.github.com/articles/creating-a-pull-request/">here</a>.</p>
+
+<p>Once project owners review your pull request, they can merge it.</p>
+
+<p>Of course the whole process can be repeated (just leave out the steps where you add remotes). </p>
+    </div>
+
+
+
+
 ## Table of content
 * [1. one](/1-Design-Phase)
 * [2. two](/2-HandOffPhase)
