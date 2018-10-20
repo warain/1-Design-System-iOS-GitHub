@@ -14,8 +14,7 @@ much success. My frustrations in attempting to build my own product from idea to
  * Create a Comprehensive Roadmap from the Idea to Production
  * Launch and Maintain a Production Ready Product/Service
 
-Testing Fuse and Medtronic More tests, Ant final, without ant
-Lets continue the code edeting without ant designs!!!
+
 
 ## This Is Not Simply a Click, Plug and Play Guide !
 There are hundreds of those on the internet. This guide is for those who seriously want to take a concept and make it into a real World product and help change the world in the process. On Average it may take 3 to 6 months to complete this guide depending on the number of people on your team, your technology acumen and importantly your passion for achieving your goal.
