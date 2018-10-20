@@ -68,8 +68,11 @@ git push origin master
 
 <pre><code>cd private-repo
 git remote add public https://github.com/exampleuser/public-repo.git
-git pull public master # Creates a merge commit, Option 'E' ==> "i" "type a reason for the merge" 'esc', 'wq!' 'git push origin push'
-git push origin master
+git pull public master # Creates a merge commit, Option
+
+* 'E' ==> "i" "type a reason for the merge" 'esc', 'wq!',
+* 'git commit -m"changes" and git push origin push'
+* git push origin master
 </code></pre>
 
 <p>Awesome, your private repo now has the latest code from the public repo plus your changes.</p>
