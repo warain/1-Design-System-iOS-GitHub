@@ -13,7 +13,7 @@ much success. My frustrations in attempting to build my own product from idea to
  * Established a Realistic cost Benefit relationships
  * Create a Comprehensive Roadmap from the Idea to Production
  * Launch and Maintain a Production Ready Product/Service
-test
+Testing Fuse and Medtronic
 
 ## This Is Not Simply a Click, Plug and Play Guide !
 There are hundreds of those on the internet. This guide is for those who seriously want to take a concept and make it into a real World product and help change the world in the process. On Average it may take 3 to 6 months to complete this guide depending on the number of people on your team, your technology acumen and importantly your passion for achieving your goal.
@@ -39,7 +39,6 @@ Design Templates Cloning Process
 <p>Here is the full workflow (we've done this before open sourcing <a href="https://github.com/facebook/react-native">React Native</a>):</p>
 
 <hr>
-Testing Fuse
 <p>First, duplicate the repo as others said (details <a href="https://help.github.com/articles/duplicating-a-repository/">here</a>):</p>
 
 <p>Create a new repo (let's call it <code>private-repo</code>) via the <a href="https://github.com/new">Github UI</a>. Then:</p>
