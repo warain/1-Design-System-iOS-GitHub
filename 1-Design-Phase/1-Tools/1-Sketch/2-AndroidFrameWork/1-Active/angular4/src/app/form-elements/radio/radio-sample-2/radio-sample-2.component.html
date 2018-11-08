@@ -1,0 +1,8 @@
+<igx-radio *ngFor="let color of colors"
+    name="color"
+    [value]="color.hex"
+    [(ngModel)]="selectedColor">
+    {{color.name}}
+</igx-radio>
+
+<div class="box" [style.background-color]="selectedColor"></div>

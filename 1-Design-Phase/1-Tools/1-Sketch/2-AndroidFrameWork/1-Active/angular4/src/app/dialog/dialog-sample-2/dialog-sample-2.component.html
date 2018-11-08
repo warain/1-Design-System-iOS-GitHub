@@ -1,0 +1,12 @@
+<h4 class="sample-title">Standard Dialog</h4>
+<p class="sample-description">Confirmation dialog.</p>
+
+<button igxButton="raised" igxRipple="white" (click)="dialog.open()">Show Dialog</button>
+
+<igx-dialog #dialog title="Confirmation"
+    leftButtonLabel="Cancel"
+    (onLeftButtonSelect)="dialog.close()"
+    rightButtonLabel="OK"
+    (onRightButtonSelect)="onDialogOKSelected($event)"
+    message="Are you sure you want to delete the Annual_Report_2016.pdf and Annual_Report_2017.pdf files?">
+</igx-dialog>
